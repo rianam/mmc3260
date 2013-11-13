@@ -2,55 +2,121 @@
 
 /* Typically you put all of your general element styles at the top. */
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	background-color: #eeeeee;
-}
-
-h1 {
-	color: #111111;
-}
-
-h2 {
-
+    font-size: 16px;
+    background-color: #E5FFFF;
+    font-family: arial, sans-serif; 
+    line-height: 24px
 }
 
 p {
-
+    margin-bottom: 16px;
 }
-
-img {
-
-}
-
-
-/* Container or module styles probably come next. */
-
+    
 header {
-
+    background-color: #000000;
+    color: #ffffff; 
+    height: 60px;
+    font-family: fantasy, arial, sans-serif; 
+    
 }
 
-nav {
-
+header h1 {
+    float: left;
+    font-size: 26px;
+    font-family: fantasy, arial, sans-serif;
+    font-weight: 500;
+    border: 3px;
+    padding: 10px;
 }
 
-nav a {
-
+header nav {
+        margin-top: 12px; 
+        float: left;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
 }
 
-section {
-
+header a {
+    color: #4A73B9;
+    text-decoration: none;
+    padding: 12px;
+    
 }
 
-aside {
 
+header a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+header a:active {
+    text-decoration: underline;
+    
 }
 
-footer {
 
+        
+article {
+    clear: both;
+    padding: 0px 10px 0px 10px;
 }
 
-/* Class and ID styles come last because they are the most specific. */
+article h1 {
+        font-size: 36px; 
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: fantasy, arial, sans-serif;
+}   
 
-#copyright {
+aside{
+    float: right;
+    
+}
 
+footer{
+        text-align:center;
+        font-size: 11px;
+        font-family: arial, sans-serif;
+        font-weight: 500;
+}
+    
+
+
+@media screen and (max-width: 700px) {
+    
+    
+    header h1{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    
+    header nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        text-decoration: underline;
+    }
+    
+    article h1{
+        text-align: center;
+        width: 100%;
+        clear: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5%;
+        font-size: 30px;
+        
+    } 
+    
+    
 }
